@@ -298,6 +298,12 @@ service:
   port: 80
   targetPort: 8080
 
+httpRoute:
+  enabled: false   # Default disabled, to avoid Helm error
+  host: ""         # You can set a host later if required
+  path: "/"        # Default path
+
+
 
 Step 4: Edit the Deployment Template
 -------
